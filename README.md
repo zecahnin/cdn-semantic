@@ -1,5 +1,10 @@
 # cdn-semantic
-CND with semantic-ui jquery jquery-ui components-font-awesome highcharts minify leaflet concat uglify        
+Automatizador de CDN com as LIB:
+semantic-ui 
+jquery 
+jquery-ui 
+components-font-awesome 
+highcharts 
 
 ==============
 
