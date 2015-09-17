@@ -1,0 +1,43 @@
+/*
+
+* # INTELLETO IPLA
+*
+*
+*
+*
+
+*/
+
+body {
+	margin-bottom:100px;
+}
+
+.ui.label.ipla-link {
+	border:none;
+	padding-top:11px;
+}
+
+.ui.floating.label {
+	top: 15%;
+	left: 70%;
+}
+
+.logo {
+	height:23px;
+	width:100px;
+	top: 15px;
+	position: relative;
+}
+
+.ui.container.ipla-top-margin {
+	margin-top:85px;
+}
+
+.ui.header a.item {
+	padding:10px 0 10px 15px;
+}
+
+.ui.form {
+	background:#efefef;
+}
+

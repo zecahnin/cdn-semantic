@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+SOURCE="${BASH_SOURCE[0]}"
+
+while [ -h "$SOURCE" ]; do
+    cd "$(dirname "$SOURCE")"
+    SOURCE="$(readlink "$SOURCE")"
+done
+
+DIR="$( dirname "$(cd -P "$( dirname "$SOURCE" )" && pwd)" )"
+
+cd $DIR
+
+npm -v > /dev/null 2>&1
+NODE_IS_INSTALLED=$?
+
+if [[ $NODE_IS_INSTALLED -ne 0 ]]; then
+    cd bin/
+    wget https://nodejs.org/dist/v0.12.7/node-v0.12.7.tar.gz
+    tar -xzf node-v0.12.7.tar.gz
+    cd node-v0.12.7/
+    ./configure
+    make
+    sudo make install
+    cd ..
+    cd ..
+fi
+
+
+gulp -v > /dev/null 2>&1
+GULP_IS_INSTALLED=$?
+
+if [[ $GULP_IS_INSTALLED -ne 0 ]]; then
+    sudo npm install -g gulp --save-dev
+fi
+
+npm install --save-dev
+
+bower -v > /dev/null 2>&1
+BOWER_IS_INSTALLED=$?
+
+if [[ $BOWER_IS_INSTALLED -ne 0 ]]; then
+    sudo npm install -g bower --save-dev
+fi
+
+bower install
+
+cp .semantic.json semantic.json
+
+gulp update

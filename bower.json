@@ -1,0 +1,36 @@
+{
+  "name": "cdn_ipla",
+  "version": "0.0.1",
+  "authors": [
+    "intelletto"
+  ],
+    "main": [
+        "js/main.js"
+    ],
+  "license": "MIT",
+    "dependencies": {
+        "jquery": "~2.1.1",
+        "jspath": "*",
+        "jquery-ui": "*",
+        "components-font-awesome":"*",
+        "highcharts":"*",
+        "leaflet":"*",
+        "leaflet.activelayers":"*"
+
+
+    },
+    "devDependencies": {
+        "jquery": "~2.1.1",
+        "jspath": "*",
+        "jquery-ui": "*",
+        "components-font-awesome":"*"
+    },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+      "bower_components/semantic",
+    "test",
+    "tests"
+  ]
+}

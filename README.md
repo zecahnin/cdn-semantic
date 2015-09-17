@@ -44,4 +44,3 @@ CND with semantic-ui jquery jquery-ui components-font-awesome highcharts minify 
 <link rel="stylesheet" type="text/css" href="http://cdn.localhost/vendor/css/cnd.min.css">
 <script src="http://cdn.localhost/vendor/js/cnd.min.js"></script>
 
-### Screenshot
