@@ -22,25 +22,23 @@ highcharts
 3. Entre na pasta do projeto e rode bin/update
 
 
-### VirualHost Apache
-<VirtualHost *:80>
-   DocumentRoot "$_CDNFOLDER/public"
-   ServerName cdn.localhost
-   ErrorLog ${APACHE_LOG_DIR}/cdn_ipla_error.log
-   # This should be omitted in the production environment
-   Header set Access-Control-Allow-Origin "*"
-   <Directory "$_CDNFOLDER/public">
-        Options +Indexes
-        Require all granted
-        AllowOverride All
-   </Directory>
-   <Files *.ini>
-        Require all granted
-   </Files>
-</VirtualHost>
+### VirualHost Apache ###
+         <VirtualHost *:80>
+            DocumentRoot "$_CDNFOLDER/public"
+            ServerName cdn.localhost
+            ErrorLog ${APACHE_LOG_DIR}/cdn_ipla_error.log
+            Header set Access-Control-Allow-Origin "*"
+            <Directory "$_CDNFOLDER/public">
+               Options +Indexes
+               Require all granted
+               AllowOverride All
+            </Directory>
+         </VirtualHost>
+        
 
-### hosts
-127.0.0.1       cdn.localhost
+### /etc/hosts  ###
+         127.0.0.1       cdn.localhost
+
 
 
 ### Testando a aplicação
