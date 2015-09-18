@@ -46,6 +46,6 @@ highcharts
 ### Testando a aplicação
 
 1. Adicionar o js e css
-<link rel="stylesheet" type="text/css" href="http://cdn.localhost/vendor/css/cnd.min.css">
-<script src="http://cdn.localhost/vendor/js/cnd.min.js"></script>
+`<link rel="stylesheet" type="text/css" href="http://cdn.localhost/vendor/css/cnd.min.css">`
+`<script src="http://cdn.localhost/vendor/js/cnd.min.js"></script>`
 
